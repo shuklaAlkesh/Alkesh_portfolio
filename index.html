@@ -7,31 +7,64 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
        <script src="https://kit.fontawesome.com/f8903551c9.js" crossorigin="anonymous"></script>
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+        $(document).ready(function() {
+          var certificates = $(".certificate");
+          var currentIndex = 0;
+
+          $(".next").click(function() {
+            if (currentIndex < certificates.length - 1) {
+              certificates.eq(currentIndex).hide();
+              currentIndex++;
+              certificates.eq(currentIndex).show();
+            }
+          });
+
+          $(".prev").click(function() {
+            if (currentIndex > 0) {
+              certificates.eq(currentIndex).hide();
+              currentIndex--;
+              certificates.eq(currentIndex).show();
+            }
+          });
+        });
+
+      </script>
+
+
     <title>Alkesh portfolio</title>
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <div class="logo">
-                <h1><a href="index.html">AlkeshXperience</a></h1>
-            </div>
-            <ul class="nav_menu">
-                <li><a href="Components/home.html">Home</a></li>
-                <li><a href="Components/Skills.html">Skills</a></li>
-                <li><a href="Components/project.html">Project</a></li>
-                <li><a href="Components/certificate.html">Certificate</a></li>
-                <li><a href="Components/About.html">About</a></li>
-            </ul>
-            <span class="navbar-text">
-                <div class="social-icon">
-                    <a href="https://www.linkedin.com/in/alkesh-shukla-a002b0239/"><img src="img/nav-icon1.svg" alt="" /></a>
-                    <a href="https://www.facebook.com/alkesh.shukla.7923"><img src="img/nav-icon2.svg" alt="" /></a>
-                    <a href="https://www.instagram.com/shuklalkesh_11/"><img src="img/nav-icon3.svg" alt="" /></a>
-                </div>
-                <button class="connectButton">Let's Connect</button>
-            </span>
+  <nav>
+    <div class="container">
+      <div class="logo">
+        <h1><a href="index.html">AlkeshXperience</a></h1>
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <div class="bars"></div>
+        <div class="bars"></div>
+        <div class="bars"></div>
+      </div>
+      
+      <ul class="nav_menu" id="menu">
+        <li><a href="Components/home.html">Home</a></li>
+        <li><a href="Components/Skills.html">Skills</a></li>
+        <li><a href="Components/project.html">Project</a></li>
+        <li><a href="Components/certificate.html">Certificate</a></li>
+        <li><a href="Components/About.html">About</a></li>
+      </ul>
+      <span class="navbar-text">
+        <div class="social-icon">
+          <a href="https://www.linkedin.com/in/alkesh-shukla-a002b0239/"><img src="img/nav-icon1.svg" alt="" /></a>
+          <a href="https://www.facebook.com/alkesh.shukla.7923"><img src="img/nav-icon2.svg" alt="" /></a>
+          <a href="https://www.instagram.com/shuklalkesh_11/"><img src="img/nav-icon3.svg" alt="" /></a>
         </div>
-    </nav>
+        <button class="connectButton">Let's Connect</button>
+      </span>
+    </div>
+  </nav>
+  
     
     <header>
         <div class="container">
@@ -178,12 +211,12 @@
           <div class="footer-right">
             <h3>Social Media</h3>
             <div class="social-icons">
-              <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.facebook.com/alkesh.shukla.7923" target="_blank"><i class="fab fa-facebook-f"></i></a>
               <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-              <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/alkesh-shukla-a002b0239/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://github.com/shuklaAlkesh" target="_blank"><i class="fab fa-github"></i></a>
             </div>
-            <a href="./pdf/Alkesh_Shukla_resume.pdf" download class="resume-button">Download Resume</a>
+            <a href="../pdf/Alkesh_Shukla_resume.pdf" download class="resume-button">Download Resume</a>
           </div>
         </div>
         <div class="footer-bottom">

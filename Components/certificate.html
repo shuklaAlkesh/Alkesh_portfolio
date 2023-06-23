@@ -7,6 +7,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/f8903551c9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        var certificates = $(".certificate");
+        var currentIndex = 0;
+
+        $(".next").click(function() {
+          if (currentIndex < certificates.length - 1) {
+            certificates.eq(currentIndex).hide();
+            currentIndex++;
+            certificates.eq(currentIndex).show();
+          }
+        });
+
+        $(".prev").click(function() {
+          if (currentIndex > 0) {
+            certificates.eq(currentIndex).hide();
+            currentIndex--;
+            certificates.eq(currentIndex).show();
+          }
+        });
+      });
+    </script>
     <title>Certificate</title>
 </head>
 <body>

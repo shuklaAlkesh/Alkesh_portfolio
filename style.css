@@ -1,75 +1,158 @@
-/* style.css */
-
 /* Reset default styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* Body styles */
 body {
-    font-family: Arial, sans-serif;
+  font-family: Arial, sans-serif;
 }
 
 /* Navigation styles */
 nav {
-    background-color: #f5f5f5;
-    padding: 10px;
-    transition: background-color 0.3s;
-}
-
-nav:hover {
-    background-color: #ddd;
+  background-color: #f5f5f5;
+  padding: 10px;
 }
 
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    margin: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0 20px;
 }
 
 .logo a {
-    text-decoration: none;
-    color: #333;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.bars {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin-bottom: 6px;
+  transition: background-color 0.3s;
+}
+
+.nav_menu {
+  display: flex;
+  list-style: none;
+  margin-right: 20px;
 }
 
 .nav_menu li {
-    display: inline-block;
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .nav_menu li a {
-    text-decoration: none;
-    color: #333;
+  text-decoration: none;
+  color: #333;
 }
 
 .social-icon {
-    display: flex;
-    align-items: center;
-    margin-right: 10px;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  color: #333;
+  transition: color 0.3s ease;
 }
 
-.social-icon a {
-    display: inline-block;
-    margin-right: 5px;
+.social-icon a{
+  color: #333;
+  
+}
+
+
+.social-icons a:hover {
+  color: rgb(55, 0, 255);
 }
 
 .social-icon img {
-    width: 20px;
-    height: 20px;
-    filter: invert(32%) sepia(0%) saturate(90%) hue-rotate(215deg) brightness(103%) contrast(100%);
+  width: 20px;
+  height: 20px;
+  filter: invert(32%) sepia(0%) saturate(90%) hue-rotate(215deg) brightness(103%) contrast(100%);
 }
 
 .connectButton {
-    padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
+.navbar-text{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav_menu {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .bars {
+    background-color: #333;
+    transition: background-color 0.3s;
+  }
+
+  .menu-open .bars {
+    background-color: #fff;
+  }
+
+  .menu-open .bars:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-open .bars:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 7px);
+  }
+
+  .menu-open .bars:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+  }
+
+  .nav_menu {
+    display: none;
+    margin-top: 10px;
+  }
+
+  .nav_menu li {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .social-icon {
+    margin-top: 10px;
+    margin-right: 0;
+  }
+
+  .connectButton {
+    margin-top: 10px;
+  }
+}
+
+
+
 
 /* Header styles */
 /* Add more styles for the rest of your portfolio website */
@@ -119,6 +202,10 @@ header {
     height: 100%;
     object-fit: cover;
   }
+  .container.menu-open .navbar-text {
+    display: flex;
+  }
+  
   
   /* Typewriter animation */
   @keyframes typewriter {
@@ -139,7 +226,51 @@ header {
       border-color: #fff;
     }
   }
-  
+ /* Responsive styles for mobile */
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+
+  .banner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-text {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .banner-image {
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+    order: -1;
+  }
+}
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .banner-text {
+    text-align: center;
+  }
+
+  .banner-text h1 {
+    font-size: 24px;
+    margin-bottom: 5px;
+    white-space: normal;
+    border-right: none;
+    animation: none;
+  }
+
+  .banner-text p {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+
+
+    
   /* skills section  */
 
   .skills-section {
@@ -289,7 +420,41 @@ header {
   .project-button:hover {
     background-color: #555;
   }
+  /* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .slider-container {
+    padding: 0 20px; /* Adjust the left and right padding as needed for mobile devices */
+  }
   
+  .project {
+    flex: 0 0 auto; /* Allow projects to occupy the available width */
+    margin: 0 10px; /* Adjust the margin as needed */
+  }
+  
+  .slider {
+    flex-wrap: nowrap; /* Ensure projects are displayed in a single line on mobile devices */
+    overflow-x: scroll; /* Enable horizontal scrolling for mobile devices */
+    margin: 0 -5px; /* Adjust the negative margin as needed */
+    padding-bottom: 10px; /* Add some bottom padding for mobile devices */
+  }
+  
+  .project-image {
+    height: 200px; /* Adjust the height as needed for mobile devices */
+  }
+  
+  .project-info {
+    padding: 15px; /* Adjust the padding as needed for mobile devices */
+  }
+  
+  .project-info h3 {
+    font-size: 20px; /* Adjust the font size as needed for mobile devices */
+  }
+  
+  .project-info p {
+    font-size: 14px; /* Adjust the font size as needed for mobile devices */
+  }
+}
+
   /* ----------------- Certificate --------------------------*/
   
   .certificate-section {
@@ -366,6 +531,42 @@ header {
   .next {
     right: 20px;
   }
+
+/* Responsive styles for mobile */
+@media (max-width: 768px) {
+  .certificate {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    max-width: calc(100% - 10px); /* Adjust the maximum width as needed */
+  }
+  
+  .slider-container {
+    padding: 0;
+    overflow-x: scroll; /* Enable horizontal scrolling for multiple certificates */
+    display: flex;
+    align-items: flex-start; /* Align certificates to the top */
+  }
+  
+  .slider {
+    scroll-snap-type: none; /* Disable scroll snap for multiple certificates */
+    width: max-content; /* Adjust the width of the slider container */
+  }
+  
+  .arrow {
+    font-size: 18px;
+    padding: 8px;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+}
+
+
 
   /*----------------footer section -----------------*/
 
@@ -476,6 +677,29 @@ header {
     margin-top: 10px;
     margin-bottom: 10px;
   }
+  @media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-left,
+  .footer-right {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .menu {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .menu li {
+    margin: 0 10px;
+  }
+}
+
 
   /*---------------------------- About Section CSS-------------------------- */
   .about-section {
@@ -576,31 +800,25 @@ header {
   }
   
   /* Responsive styles for smaller screens */
-  @media (max-width: 768px) {
-    .about-container {
-      flex-direction: column;
-      align-items: center; /* Adjust alignment to center */
-    }
-  
-    .profile-image {
-      margin-left: 0;
-      margin-bottom: 10px;
-    }
-  
-    .profile-name h3 {
-      margin-left: 0;
-      margin-top: 10px;
-      text-align: center; /* Center the profile name */
-    }
-  
-    .about-text {
-      width: 100%;
-    }
-    
-    .experience img {
-      margin-left: 0;
-      margin-top: 0;
-      margin-bottom: 10px;
-    }
+ @media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    align-items: center;
   }
+
+  .profile-image,
+  .experience img {
+    display: none;
+  }
+
+  .profile-name h3 {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .about-text {
+    margin-top: 20px;
+  }
+}
+
   
