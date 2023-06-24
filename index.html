@@ -4,33 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
-       <script src="https://kit.fontawesome.com/f8903551c9.js" crossorigin="anonymous"></script>
-       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script>
-        $(document).ready(function() {
-          var certificates = $(".certificate");
-          var currentIndex = 0;
+    <script src="https://kit.fontawesome.com/f8903551c9.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      $(document).ready(function() {
+        var certificates = $(".certificate");
+        var currentIndex = 0;
 
-          $(".next").click(function() {
-            if (currentIndex < certificates.length - 1) {
-              certificates.eq(currentIndex).hide();
-              currentIndex++;
-              certificates.eq(currentIndex).show();
-            }
-          });
-
-          $(".prev").click(function() {
-            if (currentIndex > 0) {
-              certificates.eq(currentIndex).hide();
-              currentIndex--;
-              certificates.eq(currentIndex).show();
-            }
-          });
+        $(".next").click(function() {
+          if (currentIndex < certificates.length - 1) {
+            certificates.eq(currentIndex).hide();
+            currentIndex++;
+            certificates.eq(currentIndex).show();
+          }
         });
 
-      </script>
+        $(".prev").click(function() {
+          if (currentIndex > 0) {
+            certificates.eq(currentIndex).hide();
+            currentIndex--;
+            certificates.eq(currentIndex).show();
+          }
+        });
+      });
+
+    </script>
 
 
     <title>Alkesh portfolio</title>
@@ -38,7 +38,7 @@
 <body>
   <nav>
     <div class="container">
-      <div class="logo">
+      <div class="logo navbar-brand">
         <h1><a href="index.html">AlkeshXperience</a></h1>
       </div>
       <div class="menu-toggle" onclick="toggleMenu()">
@@ -68,15 +68,17 @@
     
     <header>
         <div class="container">
-            <div class="banner">
-                <div class="banner-text">
-                    <h1>Welcome to AlkeshXperience</h1>
-                    <p>I'm a Full Stack Web Developer and Data Science enthusiast.</p>
-                    <p>I specialize in building responsive and user-friendly web applications using the latest technologies.</p>
-                    <p>With expertise in HTML, CSS, JavaScript, React, Node.js, and SQL, I create dynamic and interactive websites.</p>
-                    <p>I'm also skilled in data analysis and visualization using Python, Pandas, and Matplotlib.</p>
-                    <p>Explore my portfolio and projects to see examples of my work and let's connect to collaborate on exciting ventures!</p>
-                </div>
+          <div class="banner-text">
+            <h1>Welcome to AlkeshXperience</h1>
+            <p>Hey there! 👋 I'm Alkesh Shukla, a passionate Full Stack Web Developer and Data Science enthusiast.</p>
+            <p>🎓 Currently pursuing my Bachelor's degree in Electronics and communication Engineering (ECE) at IIIT Sri City, Andhra Pradesh.</p>
+            <p>💻 With a love for cutting-edge technologies, I create stunning and user-friendly web applications.</p>
+            <p>🚀 Proficient in HTML, CSS, JavaScript, React, Node.js, and SQL, I build dynamic and interactive websites.</p>
+            <p>📊 Skilled in data analysis and visualization using Python, Pandas, and Matplotlib.</p>
+            <p>🔍 Attention to detail and a passion for seamless user experiences drive my work.</p>
+            <p>💡 Explore my portfolio and projects to witness the results of my creative endeavors.</p>
+            <p>✨ Let's connect and bring our ideas to life!</p>
+        </div>
                 
                 <div class="banner-image">
                     <img src="img/Alkesh_Photo-fotor.jpg" alt="Profile Photo">
@@ -118,54 +120,57 @@
         </div>
       </section>
       <!-----------------------Project Section--------------------------->
-
-      <section class="projects-section">
-        <h2>Projects</h2>
-        <div class="slider-container">
-          <div class="slider">
-            <div class="project">
-              <div class="project-image">
-                <img src="img/hospital-management-system.webp" alt="Project 1">
-              </div>
-              <div class="project-info">
-                <h3>Hospital Management System</h3>
-                <p>Hospital Management System, an OOPS project aimed at efficiently managing hospital operations and patient information..</p>
-                <div class="project-buttons">
-                  <a href="https://github.com/shuklaAlkesh/Hospital-Management-system-C--oops-project.git" target="_blank" class="project-button">GitHub</a>
-                  <a href="pdf/TEAM__5_Hospital_Management_system.pdf" target="_blank" class="project-button">PDF</a>
-                </div>
-              </div>
-            </div>
-            <div class="project">
-              <div class="project-image">
-                <img src="img/color_sorting_machine.png" alt="Project 2">
-              </div>
-              <div class="project-info">
-                <h3> Color Sorting and WeighingMachine </h3>
-                <p>Color sorting Machine is a embedded System Project.</p>
-                <div class="project-buttons">
-                  <a href="https://github.com/shuklaAlkesh/colour-sorting-and-weighing-machine_embedded_system_project-.git" target="_blank" class="project-button">GitHub</a>
-                  <a href="pdf/color_sorting_project_report.pdf" target="_blank" class="project-button">PDF</a>
-                </div>
-              </div>
-            </div>
-            <div class="project">
+      <div class="container"></div>
+        <section class="projects-section">
+          <h2>Projects</h2>
+          <div class="slider-container">
+            <div class="slider">
+              <div class="project">
                 <div class="project-image">
-                  <img src="img/Underwater wireless communication.png" alt="Project 2">
+                  <img src="img/hospital-management-system.webp" alt="Project 1">
                 </div>
                 <div class="project-info">
-                  <h3> Under Water wireless communication </h3>
-                  <p>Under Water wireless communication using Ir sensor as a transmittor and Tsop 1738 receiver.</p>
+                  <h3>Hospital Management System</h3>
+                  <p>Hospital Management System, an OOPS project aimed at efficiently managing hospital operations and patient information.</p>
+                  <div class="project-buttons">
+                    <a href="https://github.com/shuklaAlkesh/Hospital-Management-system-C--oops-project.git" target="_blank" class="project-button">GitHub</a>
+                    <a href="pdf/TEAM__5_Hospital_Management_system.pdf" target="_blank" class="project-button">PDF</a>
+                  </div>
+                </div>
+              </div>
+              <div class="project">
+                <div class="project-image">
+                  <img src="img/color_sorting_machine.png" alt="Project 2">
+                </div>
+                <div class="project-info">
+                  <h3>Color Sorting and Weighing Machine</h3>
+                  <p>Color sorting Machine is an embedded System Project.</p>
+                  <div class="project-buttons">
+                    <a href="https://github.com/shuklaAlkesh/colour-sorting-and-weighing-machine_embedded_system_project-.git" target="_blank" class="project-button">GitHub</a>
+                    <a href="pdf/color_sorting_project_report.pdf" target="_blank" class="project-button">PDF</a>
+                  </div>
+                </div>
+              </div>
+              <div class="project">
+                <div class="project-image">
+                  <img src="img/Underwater wireless communication.png" alt="Project 3">
+                </div>
+                <div class="project-info">
+                  <h3>Underwater Wireless Communication</h3>
+                  <p>Underwater wireless communication using IR sensor as a transmitter and TSOP1738 receiver.</p>
                   <div class="project-buttons">
                     <a href="https://github.com/shuklaAlkesh/UnderWater-wireless-communication-using-ir-sensor-as-a-transmittor-and-tsop1738-receivers-.git" target="_blank" class="project-button">GitHub</a>
                     <a href="pdf/UNDER_WATER_WIRELESS_COMMUNICATION_FCOM_PROJECT (2).pdf" target="_blank" class="project-button">PDF</a>
                   </div>
                 </div>
               </div>
-            <!-- Add more project slides as needed -->
+              <!-- Add more project slides as needed -->
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
+      
+      
 
       <!---------------Certificate section-------------------->
 
