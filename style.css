@@ -511,8 +511,8 @@ header {
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
   }
-  
-  .certificate {
+
+ .certificate {
     flex: 0 0 400px;
     margin-right: 15px;
     scroll-snap-align: start;
