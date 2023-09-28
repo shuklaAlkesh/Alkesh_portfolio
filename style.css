@@ -69,7 +69,7 @@ nav {
 }
 
 .nav_menu li a:hover {
-  color: rgb(115, 79, 247);
+  color: rgb(159, 134, 249);
 }
 
 .social-icon {
@@ -362,6 +362,7 @@ header {
   .projects-section {
     background-color: #333;
     padding: 60px 0;
+    margin-top: -20px;;
     text-align: center;
    
   }
@@ -483,115 +484,55 @@ header {
 
   /* ----------------- Certificate --------------------------*/
   
-  .certificate-section {
-    background-color: #333;
-    padding: 40px;
-    text-align: center;
-  }
-  
-  .certificate-section h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
-  
-  .slider-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .slider {
-    display: flex;
-    scroll-snap-type: x mandatory;
-    scroll-behavior: smooth;
-  }
 
- .certificate {
-    flex: 0 0 400px;
-    margin-right: 15px;
-    scroll-snap-align: start;
-    border: 2px solid #ccc;
-    border-radius: 5px;
-  }
-  
-  .certificate-image {
-    height: auto; /* Adjust the height as per your preference */
-    width: 600px; /* Adjust the width as per your preference */
-    overflow: hidden;
-  }
-  
-  .certificate-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 24px;
-    color: #333;
-    background-color: #fff;
-    padding: 10px;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-  }
-  
-  .arrow:hover {
-    background-color: #f5f5f5;
-  }
-  
-  .prev {
-    left: 20px;
-  }
-  
-  .next {
-    right: 20px;
-  }
+.certificates-section {
+  background-color: #333;
+  padding: 40px;
+  text-align: center;
+}
 
-/* Responsive styles for mobile */
+.certificates-section h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.certificates-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.certificate-card {
+  flex-basis: calc(33.33% - 20px); /* Adjust based on your design */
+  margin: 10px; /* Add margin for spacing */
+  overflow: hidden;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+.certificate-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.certificate-card:hover {
+  transform: scale(1.05); /* Add a hover effect to slightly scale up the certificate card */
+}
+
 @media (max-width: 768px) {
-  .certificate {
-    flex: 0 0 100%; /* Show one certificate per row on mobile */
-    margin-right: 10px;
-    max-width: calc(100% - 10px); /* Adjust the maximum width as needed */
-  }
-
-  .slider-container {
-    padding: 0;
-    overflow-x: auto; /* Enable horizontal scrolling for multiple certificates */
-    display: flex;
-    align-items: flex-start; /* Align certificates to the top */
-  }
-
-  .slider {
-    scroll-snap-type: none; /* Disable scroll snap for mobile devices */
-    width: max-content; /* Adjust the width of the slider container */
-    white-space: nowrap; /* Prevent certificates from wrapping to a new line */
-  }
-
-  .arrow {
-    font-size: 18px;
-    padding: 8px;
-  }
-
-  .prev {
-    left: 10px;
-  }
-
-  .next {
-    right: 10px;
+  .certificate-card {
+    flex-basis: calc(50% - 20px); /* Adjust for mobile layout */
   }
 }
+
+
 
 
 
