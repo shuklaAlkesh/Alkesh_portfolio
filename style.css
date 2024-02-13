@@ -234,11 +234,11 @@ header {
   0% {
     width: 0; /* Start with no width */
   }
-  80% {
-    width: 75%; /* Complete typing at 80% */
+  68% {
+    width: 68%; /* Complete typing at 80% */
   }
   100% {
-    width: 75%; /* Keep full width for a brief moment */
+    width: 68%; /* Keep full width for a brief moment */
   }
 }
   
