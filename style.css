@@ -203,8 +203,8 @@ header {
   text-transform: uppercase; /* Transform to uppercase for added impact */
   overflow: hidden; /* Hide overflow to create typewriter effect */
   white-space: nowrap; /* Prevent wrapping */
-  border-right: 2px solid #fff; /* Create blinking cursor effect */
-  animation: typewriter 6s steps(40) infinite; /* Typewriter animation */
+  /* border-right: 2px solid #fff; Create blinking cursor effect */
+  /* animation: typewriter 6s steps(40) infinite; Typewriter animation */
   text-decoration: none; /* Remove text decoration */
 }
   
@@ -232,7 +232,7 @@ header {
   }
   
   
-/* Typewriter animation */
+/* Typewriter animation
 @keyframes typewriter {
   from {
     width: 0;
@@ -243,6 +243,7 @@ header {
 }
 
 /* Blink caret animation */
+/*
 @keyframes blink-caret {
   from, to {
     border-color: transparent;
@@ -250,7 +251,7 @@ header {
   50% {
     border-color: #fff;
   }
-}
+} */
 
 
  /* Responsive styles for mobile */
