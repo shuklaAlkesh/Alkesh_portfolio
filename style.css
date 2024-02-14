@@ -234,14 +234,21 @@ header {
   
 /* Typewriter animation */
 @keyframes typewriter {
-  0% {
-    width: 0; /* Start with no width */
+  from {
+    width: 0;
   }
-  80% {
-    width: 68%; /* Complete typing at 80% */
+  to {
+    width: 68%;
   }
-  100% {
-    width: 68%; /* Keep full width for a brief moment */
+}
+
+/* Blink caret animation */
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #fff;
   }
 }
 
