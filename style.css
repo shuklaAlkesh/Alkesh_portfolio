@@ -4,7 +4,14 @@
   box-sizing: border-box;
 }
 
-/* Body styles */
+/* Body styles 
+colour : 1 : #2e3267;
+colour : 2 : #6c63ff;
+
+
+*/
+
+
 body {
   font-family: Arial, sans-serif;
 }
@@ -25,7 +32,7 @@ nav {
 
 .logo a {
   text-decoration: none;
-  color: #333;
+  color: #2e3267;
 }
 
 .menu-toggle {
@@ -36,7 +43,7 @@ nav {
 .bars {
   width: 30px;
   height: 3px;
-  background-color: #333;
+  background-color: #2e3267;
   margin-bottom: 6px;
   transition: background-color 0.3s;
 }
@@ -45,7 +52,7 @@ nav {
   text-decoration: none;
   font-family: "Arial Black", sans-serif;
   font-size: 24px;
-  color: #333;
+  color: #2e3267;
   transition: transform 0.3s;
 }
 
@@ -67,11 +74,11 @@ nav {
 .nav_menu li a {
   font-size: 20px;
   text-decoration: none;
-  color: #333;
+  color: #2e3267;
 }
 
 .nav_menu li a:hover {
-  color: rgb(159, 134, 249);
+  color: #6c63ff;
 }
 
 .social-icon {
@@ -82,11 +89,11 @@ nav {
 
 .social-icon a {
   text-decoration: none;
-  color: #333;
+  color: #2e3267;
 }
 
 .social-icon a:hover img {
-  filter: brightness(0%) saturate(100%) hue-rotate(240deg);
+  filter: brightness(10%) saturate(25%) hue-rotate(240deg);
 }
 
 .social-icon a img {
@@ -100,7 +107,7 @@ nav {
   margin-left: 20px;
   padding: 15px 20px;
   border-radius: 8px;;
-  background-color: #333;
+  background-color: #2e3267;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -129,7 +136,7 @@ nav {
   }
 
   .bars {
-    background-color: #333;
+    background-color: #2e3267;
     transition: background-color 0.3s;
   }
 
@@ -174,7 +181,7 @@ nav {
 /* Header styles */
 
 header {
-    background-color: #333;
+    background-color: rgba(31,38,65,255);
     color: #fff;
     padding: 40px;
     display: flex;
@@ -186,7 +193,7 @@ header {
     align-items: center;
     justify-content: space-between;
     height: auto;
-    background-color: #333;
+    background-color: #2e3267;
     padding: 20px;
   }
   
@@ -302,11 +309,11 @@ header {
   /* skills section  */
 
   .skills-section {
-    background-color: #333;
+    background-color: #2e3267;
     color: #fff;
     padding: 40px;
     text-align: center;
-    margin-bottom: -50px;
+    margin-bottom: -30px;
   }
   
   .skills-section h2 {
@@ -336,7 +343,7 @@ header {
   .skill h3 {
     font-size: 24px;
     margin-bottom: 15px;
-    color: #333;
+    color: #2e3267;
   }
   
   .skill ul {
@@ -348,12 +355,12 @@ header {
   .skill ul li {
     font-size: 16px;
     margin-bottom: 5px;
-    color: #666;
+    color: #2e3267;
   }
   
   .skill ul li:before {
     content: "\2022";
-    color: #666;
+    color: #2e3267;
     display: inline-block;
     width: 1em;
     margin-left: -1em;
@@ -368,7 +375,7 @@ header {
   
 /* Experience section */
 .experience-section {
-  background-color: #333;
+  background-color: rgba(31,38,65,255);
   color: #060606;
   padding: 40px;
   text-align: center;
@@ -465,7 +472,7 @@ header {
   /* ------------- Project Section --------------------*/
  /* Projects Section CSS */
 .projects-section {
-  background-color: #333;
+  background-color: #2e3267;
   padding: 40px;
   margin-top: -10px;
   text-align: center;
@@ -529,12 +536,12 @@ header {
 .project-info h3 {
   font-size: 24px;
   margin-bottom: 10px;
-  color: #333;
+  color: #262525;
 }
 
 .project-info p {
   font-size: 16px;
-  color: #666;
+  color: #1f1e1e;
   margin-bottom: 15px;
 }
 
@@ -547,14 +554,14 @@ header {
 .project-button {
   margin: 0 5px;
   padding: 10px 20px;
-  background-color: #333;
+  background-color: #2e3267;
   color: #fff;
   text-decoration: none;
   border-radius: 5px;
 }
 
 .project-button:hover {
-  background-color: #555;
+  background-color: #f75842;
 }
 
 /* Responsive styles for mobile */
@@ -587,7 +594,7 @@ header {
   
 
 .certificates-section {
-  background-color: #333;
+  background-color: #1f2641;
   padding: 40px;
   text-align: center;
 }
@@ -641,8 +648,8 @@ header {
   /*----------------footer section -----------------*/
 
   .footer-section {
-    background-color: #fff;
-    color: #333;
+    background-color: #2e3267;
+    color: #fff;
     padding: 40px;
     text-align: center;
   }
@@ -660,7 +667,7 @@ header {
   .footer-left h3, .footer-right h3 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #333;
+    color: #fff;
   }
   
   .footer-left ul {
@@ -688,7 +695,7 @@ header {
   .social-icons a {
     display: inline-block;
     margin-right: 10px;
-    color: #333;
+    color: #fff;
     font-size: 24px;
     gap:10px;
     transition: color 0.3s ease;
@@ -727,7 +734,7 @@ header {
   }
   
   .menu li a {
-    color: #333;
+    color: #fff;
     text-decoration: none;
     padding: 5px 10px;
     border-radius: 5px;
@@ -735,7 +742,7 @@ header {
   }
   
   .menu li a:hover {
-    background-color: #555;
+    background-color: #6c63ff;
     color: #fff;
   }
   
@@ -743,7 +750,7 @@ header {
     content: "";
     display: block;
     height: 2px;
-    background-color: #333;
+    background-color: #6c63ff;
     margin-top: 10px;
     margin-bottom: 10px;
   }
@@ -774,7 +781,7 @@ header {
   /*---------------------------- About Section CSS-------------------------- */
   .about-section {
     text-align: center;
-    background-color: #333;
+    background-color: #3b4082;
     color: #fff;
     padding: 20px;
   }
