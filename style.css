@@ -178,6 +178,7 @@ nav {
 
 
 
+
 /* Header styles */
 
 header {
@@ -237,28 +238,50 @@ header {
   .container.menu-open .navbar-text {
     display: flex;
   }
-  
-  
-/* Typewriter animation
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
+
+  /* coding profile styles */
+/* .highlight {
+  color: rgb(228, 11, 11);
+} */
+
+.codingPortfolio {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Increased gap for better spacing */
+  margin-top: 20px;
 }
 
-/* Blink caret animation */
-/*
-@keyframes blink-caret {
-  from, to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #fff;
-  }
-} */
+.profileButton {
+  background-color: #fff;
+  border: 2px solid rgba(31, 38, 65, 255); /* Border added for definition */
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for hover effects */
+}
+
+.profileButton a {
+  color: rgba(31, 38, 65, 255); /* Matches border color */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profileButton img {
+  width: 144px; /* Adjust size as needed */
+  height: 36px;
+  margin-right: 10px; /* Adds space between icon and text */
+}
+
+.profileButton:hover {
+  background-color: #fff;
+  border-color: #fff;;
+}
+
+.profileButton:hover a {
+  color: #fff;
+}
 
 
  /* Responsive styles for mobile */
@@ -280,8 +303,18 @@ header {
   .banner-image {
     width: 250px;
     height: 250px;
+    margin-left: auto;
     margin-bottom: 20px;
     order: -1;
+  }
+  .codingPortfolio {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .profileButton {
+      width: 100%;
+      padding: 15px 0;
   }
 }
 /* Responsive styles for mobile */
@@ -771,9 +804,9 @@ header {
     justify-content: center;
     margin-bottom: 20px;
   }
-  
+   /* change in li */
   .menu li {
-    margin: 0 10px;
+    margin: 0 2px;
   }
 }
 
