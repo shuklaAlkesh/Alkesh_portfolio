@@ -84,7 +84,7 @@ nav {
 .social-icon {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 }
 
 .social-icon a {
@@ -371,6 +371,7 @@ header {
     background-color: #f5f5f5;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
   }
   
   .skill h3 {
@@ -814,7 +815,7 @@ header {
   /*---------------------------- About Section CSS-------------------------- */
   .about-section {
     text-align: center;
-    background-color: #3b4082;
+    background-color: #1f2641;
     color: #fff;
     padding: 20px;
   }
