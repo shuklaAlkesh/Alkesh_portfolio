@@ -508,6 +508,8 @@ header {
 
   
 /* Experience section */
+
+/* Experience section */
 .experience-section {
   background-color: rgba(31,38,65,255);
   color: #060606;
@@ -538,12 +540,124 @@ header {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  transition: box-shadow 0.3s, transform 0.3s; /* Add transition for hover effect */
+  transition: box-shadow 0.3s, transform 0.3s;
 }
 
 .experience-item:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Change box shadow on hover */
-  transform: translateY(-5px); /* Move the item up slightly on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+/* Align logo with company name */
+.company-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.company-logo img {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+}
+
+.experience-details {
+  flex: 1;
+  padding: 40px;
+  text-align: left;
+}
+
+.experience-details h3 {
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+
+.experience-details h4 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.experience-details ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.experience-details ul li {
+  font-size: 18px;
+  margin-bottom: 10px;
+  list-style-type: disc;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .experience-item {
+    flex-direction: column;
+  }
+
+  .company-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .company-logo img {
+    height: 40px;
+  }
+
+  .experience-details {
+    padding: 20px;
+  }
+
+  .experience-details h3 {
+    font-size: 20px;
+  }
+
+  .experience-details h4 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .experience-details ul li {
+    font-size: 14px;
+  }
+}
+
+/* .experience-section {
+  background-color: rgba(31,38,65,255);
+  color: #060606;
+  padding: 40px;
+  text-align: center;
+  margin-bottom: -40px;
+}
+
+.experience-section h2 {
+  font-size: 32px;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.experience {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.experience-item {
+  width: 100%;
+  max-width: 1200px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s, transform 0.3s; 
+}
+
+.experience-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-5px);
 }
 
 .company-logo {
@@ -556,6 +670,16 @@ header {
   height: auto;
 }
 
+.company-logo-Lincode{
+  width: 120px;
+  padding-right: -10px;
+  padding:10px;
+}
+
+.company-logo-Lincode img{
+  max-width: 100%;
+  height: auto;
+}
 .experience-details {
   flex: 1;
   padding: 40px;
@@ -578,7 +702,7 @@ header {
   list-style-type: disc;
 }
 
-/* Media query for responsiveness */
+
 @media (max-width: 768px) {
   .experience-item {
     flex-direction: column;
@@ -586,7 +710,7 @@ header {
   
   .company-logo {
     width: 80px;
-    padding: 20px; /* Adjust padding as needed */
+    padding: 20px; 
     margin-bottom: 20px;
   }
 
@@ -601,7 +725,7 @@ header {
   .experience-details ul li {
     font-size: 14px;
   }
-}
+} */
 
   /* ------------- Project Section --------------------*/
  /* Projects Section CSS */
